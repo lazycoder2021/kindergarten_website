@@ -1,0 +1,808 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Handlee', cursive;
+        }
+
+        /* ZIG ZAG TOP DIV */
+
+        .zigzag {
+            height: 50px;
+            background: crimson;
+            width: 100%;
+            position: relative;
+        }
+
+            .zigzag::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(-45deg, white 15px, transparent 0%), linear-gradient(45deg, white 15px, transparent 0%);
+                background-size: 45px; /*135deg for getting top of the div curvy */
+            }
+
+        /* NAVBAR */
+
+        .navbar {
+            width: 90%;
+            height: 70px;
+            //border: 1px solid black;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //border: 1px solid black;
+        }
+
+            .nav-links p {
+                margin-right: 20px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+        .navbar .logo {
+            font-size: 28px;
+            font-weight: 900;
+            margin-left: 20px;
+        }
+
+        .banner {
+            width: 90%;
+            height: 60vh;
+            //border:1px solid black;
+            margin: 0px auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+            .banner h2 {
+                color: rgb(2,140,202);
+            }
+
+        .banner-left, .banner-right {
+            width: 50%;
+            height: 100%;
+            //border:1px solid black;
+        }
+
+            .banner-right img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+
+
+
+
+        .features {
+            margin-top: 100px;
+            height: 100vh;
+        }
+
+        .kids {
+            color: rgb(255, 74, 81);
+        }
+
+        .learnMore {
+            border: 1px solid black;
+            background: tomato;
+            color: white;
+            display: block;
+            margin-top: 15px;
+            padding: 5px 15px;
+            border-radius: 30px;
+        }
+
+        .banner-content {
+            //border:1px solid black;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+
+        .toddlerspan {
+            font-size: 20px;
+        }
+
+        .banner-content h2 {
+            font-size: 60px;
+        }
+
+        .banner-content p {
+            width: 400px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .features {
+            width: 80%;
+            height: 40vh;
+            //border: 1px solid black;
+            margin: 120px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        .feature {
+            width: 33.33%;
+            //border: 1px solid black;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .feature h2 {
+                margin-top: 5px;
+            }
+
+            .feature p {
+                margin: 10px 10px;
+                line-height: 30px;
+                font-size: 18px;
+            }
+
+        .icon {
+            color: white;
+            font-size: 48px;
+        }
+
+        .one {
+            background: rgb(2,140,202);
+            color: white;
+        }
+
+        .two {
+            height: 120%;
+            background: rgb(255,185,2);
+            color: white;
+        }
+
+        .three {
+            background: rgb(255,74,81);
+            color: white;
+        }
+
+        .kids2 {
+            width: 60%;
+            height: 40vh;
+            margin: 20px auto 0px;
+            position: relative;
+            //border:1px solid black;
+        }
+
+
+
+        .grade {
+            height: 80vh;
+            width: 100%;
+            background-color: rgb(255, 74, 81);
+            margin: 150px auto 100px;
+            position: relative;
+            color: white;
+            //z-index:2;
+        }
+
+            .grade::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                //z-index:-200;
+                background: linear-gradient(-135deg, white 15px, transparent 0%), linear-gradient(135deg, white 15px, transparent 0%);
+                background-size: 45px; /*135deg for getting top of the div curvy */
+            }
+
+        .grade-header {
+            padding-top: 100px;
+            //border:1px solid white;
+            text-align: center;
+        }
+
+            .grade-header h2 {
+                font-size: 40px;
+                font-weight: 100;
+            }
+
+            .grade-header span {
+                font-size: 20px;
+            }
+
+        .grade-contents {
+            display: flex;
+            //border:1px solid white;
+            width: 70%;
+            height: 30vh;
+            margin: 80px auto 20px;
+            text-align: center;
+        }
+
+        .grade-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+            .grade-content h1:hover {
+                background-color: rgb(255,185,2);
+            }
+
+            .grade-content h3 {
+                border: 1px solid white;
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                font-weight: 900;
+            }
+
+        .curvy-effect {
+            width: 100%;
+            height: 40vh;
+            position: relative;
+        }
+
+            .curvy-effect:before {
+                content: '';
+                position: absolute;
+                top: -385px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(-45deg, white 15px, transparent 0%), linear-gradient(45deg, white 15px, transparent 0%);
+                background-size: 45px;
+            }
+
+
+
+        .curvy-effect-copy {
+            width: 100%;
+            height: 40vh;
+            position: relative;
+        }
+
+            .curvy-effect-copy:before {
+                content: '';
+                position: absolute;
+                top: -287px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(-45deg, white 15px, transparent 0%), linear-gradient(45deg, white 15px, transparent 0%);
+                background-size: 45px;
+            }
+
+
+        .gc-para1 {
+            font-size: 20px;
+        }
+
+        .gc-para2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .highlights-header {
+            width: 70%;
+            margin: -300px auto 10px;
+            //border:1px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .highlights-header-right {
+            width: 600px;
+        }
+
+            .highlights-header-right p {
+                line-height: 30px;
+                font-size: 18px;
+            }
+
+        .highlights-header-left span {
+            color: rgb(255,185,2);
+            font-size: 20px;
+        }
+
+        .highlights-header-left h2 {
+            font-size: 40px;
+            font-weight: 100;
+        }
+
+        .highlights-content {
+            width: 80%;
+            //border:1px solid black;
+            height: 90vh;
+            margin: 0px auto 100px;
+            position: relative;
+        }
+
+        .highlights-image {
+            position: absolute;
+            top: 60px;
+            left: 450px;
+        }
+
+        .dumbell, .book, .swim, .puzzle {
+            //border:1px solid black;
+            width: 180px;
+            text-align: center;
+            position: absolute;
+        }
+
+        .puzzle {
+            top: 170px;
+            left: 140px;
+            border: 0px;
+        }
+
+        .swim {
+            top: 400px;
+            left: 140px;
+        }
+
+        .book {
+            top: 170px;
+            left: 930px;
+        }
+
+        .dumbell {
+            top: 400px;
+            left: 930px;
+        }
+
+            .dumbell h3, .book h3, .swim h3, .puzzle h3 {
+                font-weight: 100;
+                margin-bottom: 10px;
+                font-size: 25px;
+            }
+
+            .dumbell p, .book p, .swim p, .puzzle p {
+                margin-bottom: 10px;
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+        .ic {
+            font-size: 38px;
+            margin-bottom: 10px;
+            color: rgb(255, 185, 2);
+        }
+
+
+        .grade-copy {
+            height: 60vh;
+            width: 100%;
+            background-color: rgb(255, 185, 2);
+            padding: 10px 0px;
+            position: relative;
+            color: white;
+            //border:1px solid black;
+        }
+
+            .grade-copy::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                //z-index:-200;
+                background: linear-gradient(-135deg, white 15px, transparent 0%), linear-gradient(135deg, white 15px, transparent 0%);
+                background-size: 45px; /*135deg for getting top of the div curvy */
+            }
+
+        .grade-copy-wrapper {
+            margin: 80px auto 20px;
+            width: 80%;
+            height: 40vh;
+            //border:1px solid white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+            .grade-copy-wrapper h2 {
+                font-size: 80px;
+            }
+
+            .grade-copy-wrapper p {
+                font-size: 30px;
+            }
+
+        .grade-copy-1, .grade-copy-2, .grade-copy-3 {
+            width: 33.33%;
+            height: 100%;
+            //border:1px solid black;
+        }
+
+        .grade-copy-1, .grade-copy-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .grade-copy-2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .kids-gallery {
+            width: 70%;
+            margin: -180px auto 100px;
+            //border:1px solid red;
+            height: 70vh;
+        }
+
+        .kids-gallery-header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: auto;
+            margin-bottom: 100px;
+        }
+
+            .kids-gallery-header span {
+                font-size: 20px;
+                color: orange;
+            }
+
+            .kids-gallery-header h2 {
+                font-size: 40px;
+                font-weight: 100;
+            }
+
+        .kids-gallery-header-right {
+            width: 600px;
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        .kids-gallery-contents {
+            width: 100%;
+            //border:1px solid black;
+            height: 40vh;
+            margin-top: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .kids-gallery-content {
+            width: 33.33%;
+            height: 100%;
+            //border:1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .kids-gallery-content-image {
+            border: 1px solid black;
+            height: 70%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+            .kids-gallery-content-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.4s;
+            }
+
+                .kids-gallery-content-image img:hover {
+                    transform: scale(1.2);
+                }
+
+        .kids-gallery-content-details {
+            border: 1px solid black;
+            height: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .kids-gallery-content-details:before {
+                content: '';
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255,185,2);
+                z-index: -2;
+                transition: 0.4s;
+                transform: translateY(100%);
+            }
+
+            .kids-gallery-content-details h2 {
+                font-weight: 100;
+            }
+
+            .kids-gallery-content-details:hover:before {
+                //height: 100%;
+                transform: translateY(0%);
+            }
+    </style>
+</head>
+<body>
+    <div class="zigzag"></div>
+    <div class="navbar">
+        <div class="logo">M</div>
+        <div class="nav-links">
+            <p>Home</p>
+            <p>About</p>
+            <p>Services</p>
+            <p>Gallery</p>
+            <p>Review</p>
+            <p>Contact</p>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-left" data-aos="fade-right" data-aos-duration="800"> 
+            <div class="banner-content">
+                <span class="toddlerspan">The best toddler academy in town</span>
+                <h2><span class="kids">Kids</span> Schooling</h2>
+                <p>One two, three four five, six seven eight, nine ten. One, two and three.</p>
+                <span class="learnMore">Learn More</span>
+            </div>
+        </div>
+        <div class="banner-right" data-aos="fade-left" data-aos-duration="800">
+            <img src="images/baby1.jpg"/>
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature one" data-aos="fade-right" data-aos-duration="600">
+            <div class="icon">
+                <i class="fa fa-pencil"></i>
+            </div>
+            <div class="content">
+                <h2>Creative Writing</h2>
+                <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
+            </div>
+        </div>
+        <div class="feature two" data-aos="fade-up" data-aos-duration="600">
+            <div class="icon">
+                <i class="fa fa-cubes"></i>
+            </div>
+            <div class="content">
+                <h2>Mind Development</h2>
+                <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
+            </div>
+        </div>
+        <div class="feature three" data-aos="fade-left" data-aos-duration="600">
+            <div class="icon">
+                <i class="fa fa-users"></i>
+            </div>
+            <div class="content">
+                <h2>Creative Writing</h2>
+                <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="kids2" data-aos="fade-right" data-aos-duration="800">
+        <img src="images/kids.png"/>
+    </div>
+
+
+    <div class="grade" data-aos="fade-left" data-aos-duration="500">
+        <div class="grade-header">
+            <span class="gradespan">Listing Our Grades</span>
+            <h2>Various Grades</h2>
+        </div>
+
+        <div class="grade-contents">
+            <div class="grade-content" data-aos="fade-left" data-aos-duration="600">
+                <h3>01</h3>
+                <p class="gc-para1">Grade One</p>
+                <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
+            </div>
+            <div class="grade-content" data-aos="fade-left" data-aos-duration="700">
+                <h3>02</h3>
+                <p class="gc-para1">Grade One</p>
+                <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
+            </div>
+            <div class="grade-content" data-aos="fade-left" data-aos-duration="800">
+                <h3>03</h3>
+                <p class="gc-para1">Grade One</p>
+                <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
+            </div>
+            <div class="grade-content" data-aos="fade-left" data-aos-duration="900">
+                <h3>04</h3>
+                <p class="gc-para1">Grade One</p>
+                <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="curvy-effect"></div>
+
+    <div class="highlights">
+        <div class="highlights-header">
+            <div class="highlights-header-left" data-aos="fade-right" data-aos-duration="600">
+                <span>Quisque tellus risus, adipisci viverra</span>
+                <h2>Every Kid is Important</h2>
+            </div>
+            <div class="highlights-header-right" data-aos="fade-left" data-aos-duration="600">
+                <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin</p>
+            </div>
+        </div>
+        <div class="highlights-content">
+            <div class="highlights-image">
+                <img src="images/jumpingKid.png" />
+            </div>
+
+            <div class="puzzle" data-aos="fade-right" data-aos-duration="800">
+                <div class="puzzle-icon">
+                    <i class="fas fa-puzzle-piece ic"></i>
+                </div>
+                <div class="puzzle-content">
+                    <h3>Playing Activity</h3>
+                    <p>One two three, four five, six and seven and eight and nine.</p>
+                </div>
+            </div>
+            <div class="swim" data-aos="fade-right" data-aos-duration="800">
+                <div class="swim-icon">
+                    <i class="fas fa-swimmer ic"></i>
+                </div>
+                <div class="swim-content">
+                    <h3>Swimming</h3>
+                    <p>One two three, four five, six and seven and eight and nine.</p>
+                </div>
+            </div>
+            <div class="book" data-aos="fade-left" data-aos-duration="800">
+                <div class="book-icon ic">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="book-content">
+                    <h3>Online Course</h3>
+                    <p>One two three, four five, six and seven and eight and nine.</p>
+                </div>
+            </div>
+            <div class="dumbell" data-aos="fade-left" data-aos-duration="800">
+                <div class="dumbell-icon ic">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="dumbell-content">
+                    <h3>Health/Fitness</h3>
+                    <p>One two three, four five, six and seven and eight and nine.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grade-copy">
+        <div class="grade-copy-wrapper">
+            <div class="grade-copy-1" data-aos="fade-right" data-aos-duration="800">
+                <h2>1994</h2>
+                <p>Since We Started</p>
+            </div>
+            <div class="grade-copy-2" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/children.png"/>
+            </div>
+            <div class="grade-copy-3" data-aos="fade-left" data-aos-duration="800">
+                <h2>1395</h2>
+                <p>Kids In Classes</p>
+            </div>
+        </div>
+    </div>
+    <div class="curvy-effect-copy"></div>
+
+
+    <div class="kids-gallery">
+        <div class="kids-gallery-header">
+            <div class="kids-gallery-header-left" data-aos="fade-right" data-aos-duration="500">
+                <span>Quisque tellus risus, adipisci</span>
+                <h2>Awesome Kids Gallery</h2>
+            </div>
+            <div class="kids-gallery-header-right" data-aos="fade-left" data-aos-duration="500">
+                <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.</p>
+            </div>
+        </div>
+        <div class="kids-gallery-contents">
+            <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="600">
+                <div class="kids-gallery-content-image">
+                    <img src="images/child1.jpg" />
+                </div>
+                <div class="kids-gallery-content-details">
+                    <h2>Jane Doe</h2>
+                    <span>Grade One</span>
+                </div>
+            </div>
+            <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="700">
+                <div class="kids-gallery-content-image">
+                    <img src="images/child2.jpg" />
+                </div>
+                <div class="kids-gallery-content-details">
+                    <h2>John Doe</h2>
+                    <span>Grade One</span>
+                </div>
+            </div>
+            <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="800">
+                <div class="kids-gallery-content-image">
+                    <img src="images/child3.jpg" />
+                </div>
+                <div class="kids-gallery-content-details">
+                    <h2>John Doe</h2>
+                    <span>Grade One</span>
+                </div>
+            </div>
+            <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="900">
+                <div class="kids-gallery-content-image">
+                    <img src="images/child4.jpg" />
+                </div>
+                <div class="kids-gallery-content-details">
+                    <h2>John Doe</h2>
+                    <span>Grade One</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+
+
+        AOS.init();
+
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            lazyLoad: true,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplaySpeed: 500
+        })
+    </script>
+</body>
+</html>
