@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
@@ -17,6 +18,10 @@
             padding: 0px;
             box-sizing: border-box;
             font-family: 'Handlee', cursive;
+        }
+
+        .wrapper{
+            overflow:hidden;
         }
 
         /* ZIG ZAG TOP DIV */
@@ -294,6 +299,27 @@
             }
 
 
+        .curvy-effect-2 {
+            width: 100%;
+            height: 20vh;
+            position: relative;
+            margin-bottom: 0px;
+            border: 1px solid black;
+        }
+
+            .curvy-effect-2:before {
+                content: '';
+                position: absolute;
+                top: -245px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(-45deg, white 15px, transparent 0%), linear-gradient(45deg, white 15px, transparent 0%);
+                background-size: 45px;
+            }
+
+
+
 
         .curvy-effect-copy {
             width: 100%;
@@ -432,6 +458,56 @@
                 background-size: 45px; /*135deg for getting top of the div curvy */
             }
 
+        .grade-copy-22 {
+            height: 60vh;
+            width: 100%;
+            background-color: #c7d911;
+            padding: 10px 0px;
+            position: relative;
+            color: white;
+            margin-bottom: 100px;
+            margin-top: 20px;
+        }
+
+            .grade-copy-22::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                //z-index:-200;
+                background: linear-gradient(-135deg, white 15px, transparent 0%), linear-gradient(135deg, white 15px, transparent 0%);
+                background-size: 45px; /*135deg for getting top of the div curvy */
+            }
+
+
+        .grade-copy-33 {
+            height: 50vh;
+            width: 100%;
+            background-color: #FF4A51;
+            padding: 10px 0px;
+            position: relative;
+            color: white;
+            /margin-bottom: 100px;
+            margin-top: 20px;
+        }
+
+            .grade-copy-33::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                //z-index:-200;
+                background: linear-gradient(-135deg, white 15px, transparent 0%), linear-gradient(135deg, white 15px, transparent 0%);
+                background-size: 45px; /*135deg for getting top of the div curvy */
+            }
+
+
+
+
         .grade-copy-wrapper {
             margin: 80px auto 20px;
             width: 80%;
@@ -569,222 +645,932 @@
                 //height: 100%;
                 transform: translateY(0%);
             }
+
+        .owl-carousel {
+            width: 960px;
+            height: auto;
+            margin: 20px auto;
+            //border:1px solid black;
+            overflow: hidden;
+        }
+
+
+        .shoecontent {
+            width: 300px;
+            height: 200px;
+            margin-right: 30px;
+            border:0px solid black;
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+        }
+
+        .trustedby {
+            margin-top: 100px;
+        }
+
+            .trustedby h2 {
+                font-size: 40px;
+                font-weight: 100;
+            }
+
+        .testimonial-header {
+            //border:1px solid white;
+            position: absolute;
+            top: 150px;
+            left: 600px;
+            text-align: center;
+        }
+
+        .owl-ho{
+            position:absolute; 
+            top:290px;
+            left:300px;
+        }
+
+            .testimonial-header span {
+                font-size: 20px;
+            }
+
+            .testimonial-header h2 {
+                font-size: 40px;
+                font-weight: 100;
+                letter-spacing: 1.2px;
+            }
+
+        .cc {
+            //border-radius:50%;
+            //border:10px solid red;
+            width: 200px;
+            height: 200px;
+            margin-left: 10px;
+            margin-top:10px;
+        }
+
+            .cc img {
+                width: 80%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+        .testimonial-body {
+            //z-index:800;
+            color: black;
+            position: absolute;
+            top: 100px;
+            left: -100px;
+        }
+
+        .testimonial-body-section2 {
+            margin-right: 15px;
+            //border:1px solid black;
+        }
+
+        .form {
+            border: 1px solid black;
+            height: 150px;
+            width: 800px;
+            margin: -200px auto 100px;
+            background-color: #ffb902;
+            padding: 15px 30px;
+            border-radius: 10px;
+        }
+
+        .form-header {
+            //border:1px solid black;
+            margin-bottom: 20px;
+        }
+
+            .form-header h2 {
+                font-size: 20px;
+                word-spacing: 3px;
+            }
+
+        .form-body {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            z-index: 900;
+        }
+
+            .form-body input, .form-body span {
+                width: 25%;
+                padding: 6px 3px;
+            }
+
+            .form-body span {
+                text-align: center;
+                background: black;
+                color: white;
+            }
+
+
+        .ex {
+            margin-bottom: 0px;
+        }
+
+        .footer {
+            height: 33vh;
+            //border: 1px solid white;
+            width: 80%;
+            margin: 100px auto 0px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .sec1, .sec2, .sec3, .sec4 {
+            flex: 1;
+            height: 100%;
+            width: 100%;
+            //border: 1px solid white;
+        }
+
+            .sec1 h2 {
+                font-size: 40px;
+                font-weight: 900;
+            }
+
+            .sec1 p {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .sec1 .phone {
+                font-size: 32px;
+            }
+
+            .sec1 .contact span {
+                display: block;
+            }
+
+        .contact1, .contact2 {
+            //border: 1px solid white;
+        }
+
+        .contact2 p{
+            margin:0px 10px;
+        }
+
+        .sec1 .contact {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            
+        }
+
+        .sec2{
+            //border:1px solid white;
+            margin-left:25px;
+        }
+
+        .sec2-inner{
+            margin-top:30px;
+        }
+
+        .sec3{
+            //border:1px solid white;
+        }
+
+        .sec3-inner {
+            margin-top: 30px;
+        }
+
+        .sec4-inner {
+            margin-top: 30px;
+        }
+
+        .sec4-extra{
+            margin-bottom:10px;
+        }
+
+        .sec4-inner-inner{
+            margin-bottom:15px;
+        }
+
+        .sec3-inner-inner{
+            margin-bottom:10px;
+        }
+
+        .sec3-inner-inner span{
+            color:rgb(255,185,2);
+        }
+
+        .social-icons{
+            //border:1px solid white;
+            margin-top:15px;
+        }
+
+        .socialicon{
+            border:1px solid white;
+            padding:4px;
+            border-radius:50%; 
+            margin-left:5px;
+        }
+
+        .sec2 p{
+            margin-bottom:10px;
+        }
+
+        @media only screen and (max-width:480px){
+            .wrapper{
+                width:480px; 
+                //border:10px solid black;
+                overflow:hidden;
+
+            }
+
+            .shoe{
+                width:100%;
+                //border:1px solid black;
+            }
+
+            .cc img{
+                width:100px;
+                height:100px;
+                object-fit:cover;
+                border-radius:25%; 
+            }
+
+            .grade-copy-22{
+                height:70vh;
+            }
+
+            .form{
+                width:480px;
+                margin:-300px auto 100px;
+            }
+
+            .testimonial-body {
+                //border:1px solid black;
+                left: 0px;
+                margin-top: 20px;
+            }
+
+
+            .navbar{
+                display:none;
+            }
+
+            .banner{
+                width:100%; 
+                padding-top:50px;
+                flex-direction:column; 
+                height:60vh;
+                margin-bottom:350px;
+            }
+
+            .banner-left, .banner-right{
+                width:100%; 
+                //border:1px solid black;
+            }
+
+            .features {
+                width: 100%;
+                height: 40vh;
+                //border: 1px solid black;
+                margin:450px auto 250px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            .feature {
+                width: 100%;
+                //border: 1px solid black;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding:15px;
+            }
+
+            .kids2 {
+                width: 100%;
+                height: 40vh;
+                margin: 20px auto 0px;
+                position: relative;
+                //border:1px solid black;
+            }
+
+            .kids2 img{
+                width:100%; 
+            }
+
+            .grade {
+                height: 160vh;
+                width: 100%;
+                background-color: rgb(255, 74, 81);
+                margin: -40px auto 100px;
+                position: relative;
+                color: white;
+                //z-index:2;
+            }
+
+            .grade-contents {
+                display: flex;
+                flex-direction:column;
+                //border:1px solid white;
+                width: 100%;
+                height: 30vh;
+                margin: 30px auto 20px;
+                text-align: center;
+            }
+
+            .grade-content{
+                margin:20px auto;
+            }
+
+            .gc-para2{
+                width:300px;
+            }
+
+            .highlights-header {
+                width: 100%;
+                margin: -300px auto 10px;
+                //border:1px solid black;
+                display: flex;
+                flex-direction:column;
+                justify-content: space-between;
+            }
+
+            .highlights-header {
+                width:480px;
+            }
+
+            .highlights-header p{
+                margin-top:20px;
+                width:480px; 
+            }
+
+            /* should start editing from here */
+
+            .highlights-content {
+                width: 100%;
+                //border:5px solid red;
+                height: 90vh;
+                margin: 0px auto 100px;
+                position: relative;
+            }
+
+            .highlights-image{
+                left:50px;
+            }
+
+            .puzzle, .swim, .book, .dumbell{
+                display:none;
+            }
+
+            .grade-copy {
+                height: 100vh;
+                width: 100%;
+                background-color: rgb(255, 185, 2);
+                padding: 10px 0px;
+                position: relative;
+                color: white;
+                //border:1px solid black;
+            }
+
+            .grade-copy-wrapper {
+                margin: 80px auto 20px;
+                width: 80%;
+                height: 40vh;
+                //border:1px solid white;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction:column;
+                padding-bottom:100px;
+            }
+
+            .grade-copy-1, .grade-copy-2, .grade-copy-3 {
+                width: 100%;
+                height: 100%;
+                margin-bottom:40px;
+            }
+
+            .kids-gallery {
+                width: 100%;
+                margin: -180px auto 1100px;
+                //border:1px solid red;
+                height: 70vh;
+            }
+
+            .kids-gallery-header {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: auto;
+                margin-bottom: 100px;
+                flex-direction:column;
+                width:100%; 
+                align-items:flex-start;
+            }
+
+            .kids-gallery-header-left, .kids-gallery-header-right{
+                margin-left:0px;
+                text-align:left;
+                //border:1px solid black;
+            }
+            
+
+            .kids-gallery-header-left h2{
+                margin-bottom:30px;
+            }
+
+            .kids-gallery-header-right p{
+                width:480px;
+            }
+
+            .kids-gallery-contents {
+                width: 100%;
+                //border:1px solid black;
+                height: 40vh;
+                margin-top: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction:column; 
+            }
+
+            .kids-gallery-content{
+                width:80%; 
+                margin:0px auto 30px;
+
+            }
+
+            .trustedby{
+                width:100%;
+                //border:1px solid black;
+                height:25vh;
+            }
+
+            .owl-carousel{
+                width:100%; 
+            }
+
+            .owl-carousel .owl-item img{
+                width:40%; 
+            }
+
+            .testimonial-header {
+                //border:1px solid white;
+                position: absolute;
+                top: 100px;
+                left: 30px;
+                text-align: center;
+            }
+
+            .owl-ho{
+                left:0px;
+                top:170px;
+            }
+
+            .grade-copy-33 {
+                height: 148vh;
+                width: 100%;
+                background-color: #FF4A51;
+                padding: 10px 0px;
+                position: relative;
+                color: white;
+                //margin-bottom: 100px;
+                margin-top: 20px;
+            }
+
+            .footer{
+                flex-direction:column;
+            }
+
+            .sec1, .sec2, .sec3, .sec4{
+                //border:1px solid white; 
+                margin-bottom:20px;
+            }
+
+            .sec1{
+                margin-bottom:25px;
+            }
+
+            .sec2{
+                margin-left:0px;
+            }
+
+        }
     </style>
 </head>
 <body>
-    <div class="zigzag"></div>
-    <div class="navbar">
-        <div class="logo">M</div>
-        <div class="nav-links">
-            <p>Home</p>
-            <p>About</p>
-            <p>Services</p>
-            <p>Gallery</p>
-            <p>Review</p>
-            <p>Contact</p>
-        </div>
-    </div>
-    <div class="banner">
-        <div class="banner-left" data-aos="fade-right" data-aos-duration="800"> 
-            <div class="banner-content">
-                <span class="toddlerspan">The best toddler academy in town</span>
-                <h2><span class="kids">Kids</span> Schooling</h2>
-                <p>One two, three four five, six seven eight, nine ten. One, two and three.</p>
-                <span class="learnMore">Learn More</span>
-            </div>
-        </div>
-        <div class="banner-right" data-aos="fade-left" data-aos-duration="800">
-            <img src="images/baby1.jpg"/>
-        </div>
-    </div>
-    <div class="features">
-        <div class="feature one" data-aos="fade-right" data-aos-duration="600">
-            <div class="icon">
-                <i class="fa fa-pencil"></i>
-            </div>
-            <div class="content">
-                <h2>Creative Writing</h2>
-                <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
-            </div>
-        </div>
-        <div class="feature two" data-aos="fade-up" data-aos-duration="600">
-            <div class="icon">
-                <i class="fa fa-cubes"></i>
-            </div>
-            <div class="content">
-                <h2>Mind Development</h2>
-                <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
-            </div>
-        </div>
-        <div class="feature three" data-aos="fade-left" data-aos-duration="600">
-            <div class="icon">
-                <i class="fa fa-users"></i>
-            </div>
-            <div class="content">
-                <h2>Creative Writing</h2>
-                <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="kids2" data-aos="fade-right" data-aos-duration="800">
-        <img src="images/kids.png"/>
-    </div>
-
-
-    <div class="grade" data-aos="fade-left" data-aos-duration="500">
-        <div class="grade-header">
-            <span class="gradespan">Listing Our Grades</span>
-            <h2>Various Grades</h2>
-        </div>
-
-        <div class="grade-contents">
-            <div class="grade-content" data-aos="fade-left" data-aos-duration="600">
-                <h3>01</h3>
-                <p class="gc-para1">Grade One</p>
-                <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
-            </div>
-            <div class="grade-content" data-aos="fade-left" data-aos-duration="700">
-                <h3>02</h3>
-                <p class="gc-para1">Grade One</p>
-                <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
-            </div>
-            <div class="grade-content" data-aos="fade-left" data-aos-duration="800">
-                <h3>03</h3>
-                <p class="gc-para1">Grade One</p>
-                <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
-            </div>
-            <div class="grade-content" data-aos="fade-left" data-aos-duration="900">
-                <h3>04</h3>
-                <p class="gc-para1">Grade One</p>
-                <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="curvy-effect"></div>
-
-    <div class="highlights">
-        <div class="highlights-header">
-            <div class="highlights-header-left" data-aos="fade-right" data-aos-duration="600">
-                <span>Quisque tellus risus, adipisci viverra</span>
-                <h2>Every Kid is Important</h2>
-            </div>
-            <div class="highlights-header-right" data-aos="fade-left" data-aos-duration="600">
-                <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin</p>
+    <div class="wrapper">
+        <div class="zigzag"></div>
+        <div class="navbar">
+            <div class="logo">M</div>
+            <div class="nav-links">
+                <p>Home</p>
+                <p>About</p>
+                <p>Services</p>
+                <p>Gallery</p>
+                <p>Review</p>
+                <p>Contact</p>
             </div>
         </div>
-        <div class="highlights-content">
-            <div class="highlights-image">
-                <img src="images/jumpingKid.png" />
-            </div>
-
-            <div class="puzzle" data-aos="fade-right" data-aos-duration="800">
-                <div class="puzzle-icon">
-                    <i class="fas fa-puzzle-piece ic"></i>
-                </div>
-                <div class="puzzle-content">
-                    <h3>Playing Activity</h3>
-                    <p>One two three, four five, six and seven and eight and nine.</p>
+        <div class="banner">
+            <div class="banner-left" data-aos="fade-right" data-aos-duration="800">
+                <div class="banner-content">
+                    <span class="toddlerspan">The best toddler academy in town</span>
+                    <h2><span class="kids">Kids</span> Schooling</h2>
+                    <p>One two, three four five, six seven eight, nine ten. One, two and three.</p>
+                    <span class="learnMore">Learn More</span>
                 </div>
             </div>
-            <div class="swim" data-aos="fade-right" data-aos-duration="800">
-                <div class="swim-icon">
-                    <i class="fas fa-swimmer ic"></i>
+            <div class="banner-right" data-aos="fade-left" data-aos-duration="800">
+                <img src="images/baby1.jpg" />
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature one" data-aos="fade-right" data-aos-duration="600">
+                <div class="icon">
+                    <i class="fa fa-pencil"></i>
                 </div>
-                <div class="swim-content">
-                    <h3>Swimming</h3>
-                    <p>One two three, four five, six and seven and eight and nine.</p>
+                <div class="content">
+                    <h2>Creative Writing</h2>
+                    <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
                 </div>
             </div>
-            <div class="book" data-aos="fade-left" data-aos-duration="800">
-                <div class="book-icon ic">
-                    <i class="fas fa-book"></i>
+            <div class="feature two" data-aos="fade-up" data-aos-duration="600">
+                <div class="icon">
+                    <i class="fa fa-cubes"></i>
                 </div>
-                <div class="book-content">
-                    <h3>Online Course</h3>
-                    <p>One two three, four five, six and seven and eight and nine.</p>
+                <div class="content">
+                    <h2>Mind Development</h2>
+                    <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
                 </div>
             </div>
-            <div class="dumbell" data-aos="fade-left" data-aos-duration="800">
-                <div class="dumbell-icon ic">
-                    <i class="fas fa-dumbbell"></i>
+            <div class="feature three" data-aos="fade-left" data-aos-duration="600">
+                <div class="icon">
+                    <i class="fa fa-users"></i>
                 </div>
-                <div class="dumbell-content">
-                    <h3>Health/Fitness</h3>
-                    <p>One two three, four five, six and seven and eight and nine.</p>
+                <div class="content">
+                    <h2>Creative Writing</h2>
+                    <p>One two three, four five, six seven eight, nine ten.  One two three.One two three, four five, six seven eight, nine ten. One two three.</p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="grade-copy">
-        <div class="grade-copy-wrapper">
-            <div class="grade-copy-1" data-aos="fade-right" data-aos-duration="800">
-                <h2>1994</h2>
-                <p>Since We Started</p>
+        <div class="kids2" data-aos="fade-right" data-aos-duration="800">
+            <img src="images/kids.png" />
+        </div>
+
+
+        <div class="grade" data-aos="fade-left" data-aos-duration="500">
+            <div class="grade-header">
+                <span class="gradespan">Listing Our Grades</span>
+                <h2>Various Grades</h2>
             </div>
-            <div class="grade-copy-2" data-aos="fade-up" data-aos-duration="800">
-                <img src="images/children.png"/>
-            </div>
-            <div class="grade-copy-3" data-aos="fade-left" data-aos-duration="800">
-                <h2>1395</h2>
-                <p>Kids In Classes</p>
+
+            <div class="grade-contents">
+                <div class="grade-content" data-aos="fade-left" data-aos-duration="600">
+                    <h3>01</h3>
+                    <p class="gc-para1">Grade One</p>
+                    <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
+                </div>
+                <div class="grade-content" data-aos="fade-left" data-aos-duration="700">
+                    <h3>02</h3>
+                    <p class="gc-para1">Grade One</p>
+                    <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
+                </div>
+                <div class="grade-content" data-aos="fade-left" data-aos-duration="800">
+                    <h3>03</h3>
+                    <p class="gc-para1">Grade One</p>
+                    <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
+                </div>
+                <div class="grade-content" data-aos="fade-left" data-aos-duration="900">
+                    <h3>04</h3>
+                    <p class="gc-para1">Grade One</p>
+                    <p class="gc-para2">One two three, four five six seven. One two three, four five six seven.</p>
+                </div>
+
             </div>
         </div>
-    </div>
-    <div class="curvy-effect-copy"></div>
+
+        <div class="curvy-effect"></div>
+
+        <div class="highlights">
+            <div class="highlights-header">
+                <div class="highlights-header-left" data-aos="fade-right" data-aos-duration="600">
+                    <span>Quisque tellus risus, adipisci viverra</span>
+                    <h2>Every Kid is Important</h2>
+                </div>
+                <div class="highlights-header-right" data-aos="fade-left" data-aos-duration="600">
+                    <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin</p>
+                </div>
+            </div>
+            <div class="highlights-content">
+                <div class="highlights-image">
+                    <img src="images/jumpingKid.png" />
+                </div>
+
+                <div class="puzzle" data-aos="fade-right" data-aos-duration="800">
+                    <div class="puzzle-icon">
+                        <i class="fas fa-puzzle-piece ic"></i>
+                    </div>
+                    <div class="puzzle-content">
+                        <h3>Playing Activity</h3>
+                        <p>One two three, four five, six and seven and eight and nine.</p>
+                    </div>
+                </div>
+                <div class="swim" data-aos="fade-right" data-aos-duration="800">
+                    <div class="swim-icon">
+                        <i class="fas fa-swimmer ic"></i>
+                    </div>
+                    <div class="swim-content">
+                        <h3>Swimming</h3>
+                        <p>One two three, four five, six and seven and eight and nine.</p>
+                    </div>
+                </div>
+                <div class="book" data-aos="fade-left" data-aos-duration="800">
+                    <div class="book-icon ic">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="book-content">
+                        <h3>Online Course</h3>
+                        <p>One two three, four five, six and seven and eight and nine.</p>
+                    </div>
+                </div>
+                <div class="dumbell" data-aos="fade-left" data-aos-duration="800">
+                    <div class="dumbell-icon ic">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="dumbell-content">
+                        <h3>Health/Fitness</h3>
+                        <p>One two three, four five, six and seven and eight and nine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grade-copy">
+            <div class="grade-copy-wrapper">
+                <div class="grade-copy-1" data-aos="fade-right" data-aos-duration="800">
+                    <h2>1994</h2>
+                    <p>Since We Started</p>
+                </div>
+                <div class="grade-copy-2" data-aos="fade-up" data-aos-duration="800">
+                    <img src="images/children.png" />
+                </div>
+                <div class="grade-copy-3" data-aos="fade-left" data-aos-duration="800">
+                    <h2>1395</h2>
+                    <p>Kids In Classes</p>
+                </div>
+            </div>
+        </div>
+        <div class="curvy-effect-copy"></div>
 
 
-    <div class="kids-gallery">
-        <div class="kids-gallery-header">
-            <div class="kids-gallery-header-left" data-aos="fade-right" data-aos-duration="500">
+        <div class="kids-gallery">
+            <div class="kids-gallery-header">
+                <div class="kids-gallery-header-left" data-aos="fade-right" data-aos-duration="500">
+                    <span>Quisque tellus risus, adipisci</span>
+                    <h2>Awesome Kids Gallery</h2>
+                </div>
+                <div class="kids-gallery-header-right" data-aos="fade-left" data-aos-duration="500">
+                    <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.</p>
+                </div>
+            </div>
+            <div class="kids-gallery-contents">
+                <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="600">
+                    <div class="kids-gallery-content-image">
+                        <img src="images/child1.jpg" />
+                    </div>
+                    <div class="kids-gallery-content-details">
+                        <h2>Jane Doe</h2>
+                        <span>Grade One</span>
+                    </div>
+                </div>
+                <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="700">
+                    <div class="kids-gallery-content-image">
+                        <img src="images/child2.jpg" />
+                    </div>
+                    <div class="kids-gallery-content-details">
+                        <h2>John Doe</h2>
+                        <span>Grade One</span>
+                    </div>
+                </div>
+                <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="800">
+                    <div class="kids-gallery-content-image">
+                        <img src="images/child3.jpg" />
+                    </div>
+                    <div class="kids-gallery-content-details">
+                        <h2>John Doe</h2>
+                        <span>Grade One</span>
+                    </div>
+                </div>
+                <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="900">
+                    <div class="kids-gallery-content-image">
+                        <img src="images/child4.jpg" />
+                    </div>
+                    <div class="kids-gallery-content-details">
+                        <h2>John Doe</h2>
+                        <span>Grade One</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trustedby">
+            <div class="title"><h2>Trusted By</h2></div>
+            <div class="owl-carousel">
+                <div class="shoe">
+
+                    <div class="shoecontent">
+                        <img src="images/envato-logo.png" />
+                    </div>
+                </div>
+                <div class="shoe">
+
+                    <div class="shoecontent">
+                        <img src="images/envato-logo.png" />
+                    </div>
+                </div>
+
+                <div class="shoe">
+
+                    <div class="shoecontent">
+                        <img src="images/envato-logo.png" />
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="grade-copy-22">
+            <div class="testimonial-header">
                 <span>Quisque tellus risus, adipisci</span>
-                <h2>Awesome Kids Gallery</h2>
+                <h2>Some Happy Parents</h2>
             </div>
-            <div class="kids-gallery-header-right" data-aos="fade-left" data-aos-duration="500">
-                <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.</p>
+            <div class="owl-carousel owl-ho">
+                <div class="shoe">
+
+                    <div class="shoecontent">
+                        <div class="cc">
+                            <img src="images/11.jpg" data-src="./images/11.jpg" />
+                        </div>
+                        <div class="testimonial-body">
+                            <div class="testimonial-body-section1">
+                                <p><b>Beautiful School!</b></p>
+                            </div>
+                            <div class="testimonial-body-section2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p><b>Kate Joan</b></p>
+                                <span><b>New York, USA</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe">
+
+                    <div class="shoecontent">
+                        <div class="cc">
+                            <img src="images/22.jpg" data-src="./images/22.jpg" />
+                        </div>
+                        <div class="testimonial-body">
+                            <div class="testimonial-body-section1">
+                                <p><b>Beautiful School!</b></p>
+                            </div>
+                            <div class="testimonial-body-section2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p><b>Kate Joan</b></p>
+                                <span><b>New York, USA</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shoe">
+
+                    <div class="shoecontent cc">
+                        <div class="cc">
+                            <img src="images/33.jpg" data-src="./images/33.jpg" />
+                        </div>
+                        <div class="testimonial-body">
+                            <div class="testimonial-body-section1">
+                                <p><b>Beautiful School!</b></p>
+                            </div>
+                            <div class="testimonial-body-section2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p><b>Kate Joan</b></p>
+                                <span><b>New York, USA</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="curvy-effect"></div>
+
+        <div class="form">
+            <div class="form-header">
+                <h2>Let's Get In Touch</h2>
+            </div>
+            <div class="form-body">
+                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Company" />
+                <input type="text" placeholder="Email" />
+                <span>Call Back</span>
             </div>
         </div>
-        <div class="kids-gallery-contents">
-            <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="600">
-                <div class="kids-gallery-content-image">
-                    <img src="images/child1.jpg" />
+
+        <div class="grade-copy-33">
+            <div class="footer">
+                <div class="sec1">
+                    <h2>M</h2>
+                    <p>Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p>
+                    <div class="contact">
+                        <div class="contact1">
+                            <i class="fas fa-mobile-alt phone"></i>
+                        </div>
+                        <div class="contact2">
+                            <p>+01-123-4567</p>
+                            <p>email@support.com</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f socialicon"></i>
+                        <i class="fab fa-twitter socialicon"></i>
+                        <i class="fab fa-linkedin-in socialicon"></i>
+                        <i class="fab fa-instagram socialicon"></i>
+                    </div>
                 </div>
-                <div class="kids-gallery-content-details">
-                    <h2>Jane Doe</h2>
-                    <span>Grade One</span>
+                <div class="sec2">
+                    <h2>Our Services</h2>
+                    <div class="sec2-inner">
+                        <p>About Schooling</p>
+                        <p>Latest News</p>
+                        <p>Kids Admissions</p>
+                        <p>Contact Us</p>
+                        <p>Privacy Policy</p>
+                    </div>
                 </div>
-            </div>
-            <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="700">
-                <div class="kids-gallery-content-image">
-                    <img src="images/child2.jpg" />
+                <div class="sec3">
+                    <h2>Latest News</h2>
+                    <div class="sec3-inner">
+                        <div class="sec3-inner-inner">
+                            <p>One Two Three...</p>
+                            <span>15 March 2019</span>
+                        </div>
+                        <div class="sec3-inner-inner">
+                            <p>Four Five Six...</p>
+                            <span>18 March 2019</span>
+                        </div>
+                        <div class="sec3-inner-inner">
+                            <p>Seven Eight Nine...</p>
+                            <span>21 March 2019</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="kids-gallery-content-details">
-                    <h2>John Doe</h2>
-                    <span>Grade One</span>
-                </div>
-            </div>
-            <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="800">
-                <div class="kids-gallery-content-image">
-                    <img src="images/child3.jpg" />
-                </div>
-                <div class="kids-gallery-content-details">
-                    <h2>John Doe</h2>
-                    <span>Grade One</span>
-                </div>
-            </div>
-            <div class="kids-gallery-content" data-aos="fade-up" data-aos-duration="900">
-                <div class="kids-gallery-content-image">
-                    <img src="images/child4.jpg" />
-                </div>
-                <div class="kids-gallery-content-details">
-                    <h2>John Doe</h2>
-                    <span>Grade One</span>
+                <div class="sec4">
+                    <h2>Business Hours</h2>
+                    <div class="sec4-inner">
+                        <div class="sec4-inner-inner">
+                            <p>Our support available to help you 24 hours a day, seven days week</p>
+                        </div>
+                        <div class="sec4-extra">
+                            <p>Monday-Saturday..........8:00-18:00</p>
+                        </div>
+                        <div class="sec4-extra">
+                            <p>Friday..........8:00-18:00</p>
+                        </div>
+                        <div class="sec4-extra">
+                            <p>Sunday..........8:00-18:00</p>
+                        </div>
+                        <div class="sec4-extra">
+                            <p>Calender Events.....Closed</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -796,13 +1582,16 @@
         AOS.init();
 
         $('.owl-carousel').owlCarousel({
-            items: 1,
+            items: 3,
             lazyLoad: true,
             loop: true,
             margin: 10,
             autoplay: true,
             autoplaySpeed: 500
         })
+
+        
+
     </script>
 </body>
 </html>
